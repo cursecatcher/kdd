@@ -1,0 +1,14 @@
+prefix=/usr/local/HDF_Group/HDF5/1.10.5
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 1.10.5
+
+Cflags: -I${includedir}
+Libs: -L${libdir} 
+Requires: 
+Libs.private:  -lm -ldl -l/usr/lib/x86_64-linux-gnu/libz.so  -lhdf5
+Requires.private: 

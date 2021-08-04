@@ -1,0 +1,914 @@
+Determining size of __uint128 failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7947c/fast && /usr/bin/make -f CMakeFiles/cmTC_7947c.dir/build.make CMakeFiles/cmTC_7947c.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7947c.dir/int128_t_USE__uint128.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7947c.dir/int128_t_USE__uint128.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/int128_t_USE__uint128.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/int128_t_USE__uint128.c:23:22: error: ‘__uint128’ undeclared here (not in a function); did you mean ‘__int128’?
+   23 | #define SIZE (sizeof(__uint128))
+      |                      ^~~~~~~~~
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/int128_t_USE__uint128.c:25:12: note: in expansion of macro ‘SIZE’
+   25 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+make[1]: *** [CMakeFiles/cmTC_7947c.dir/build.make:66: CMakeFiles/cmTC_7947c.dir/int128_t_USE__uint128.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_7947c/fast] Errore 2
+
+
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/int128_t_USE__uint128.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__uint128))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;mach/mach_time.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88f94/fast && /usr/bin/make -f CMakeFiles/cmTC_88f94.dir/build.make CMakeFiles/cmTC_88f94.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_88f94.dir/H5_HAVE_MACH_MACH_TIME_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_88f94.dir/H5_HAVE_MACH_MACH_TIME_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_MACH_MACH_TIME_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_MACH_MACH_TIME_H.c:15:10: fatal error: mach/mach_time.h: File o directory non esistente
+   15 | #include <mach/mach_time.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_88f94.dir/build.make:66: CMakeFiles/cmTC_88f94.dir/H5_HAVE_MACH_MACH_TIME_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_88f94/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <mach/mach_time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;io.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4ab16/fast && /usr/bin/make -f CMakeFiles/cmTC_4ab16.dir/build.make CMakeFiles/cmTC_4ab16.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4ab16.dir/H5_HAVE_IO_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_4ab16.dir/H5_HAVE_IO_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_IO_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_IO_H.c:15:10: fatal error: io.h: File o directory non esistente
+   15 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4ab16.dir/build.make:66: CMakeFiles/cmTC_4ab16.dir/H5_HAVE_IO_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_4ab16/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;winsock2.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e5cb2/fast && /usr/bin/make -f CMakeFiles/cmTC_e5cb2.dir/build.make CMakeFiles/cmTC_e5cb2.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e5cb2.dir/H5_HAVE_WINSOCK2_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_e5cb2.dir/H5_HAVE_WINSOCK2_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_WINSOCK2_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_WINSOCK2_H.c:15:10: fatal error: winsock2.h: File o directory non esistente
+   15 | #include <winsock2.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e5cb2.dir/build.make:66: CMakeFiles/cmTC_e5cb2.dir/H5_HAVE_WINSOCK2_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_e5cb2/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <winsock2.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;globus/common.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0b82/fast && /usr/bin/make -f CMakeFiles/cmTC_b0b82.dir/build.make CMakeFiles/cmTC_b0b82.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b0b82.dir/H5_HAVE_GLOBUS_COMMON_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b0b82.dir/H5_HAVE_GLOBUS_COMMON_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_GLOBUS_COMMON_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_GLOBUS_COMMON_H.c:16:10: fatal error: globus/common.h: File o directory non esistente
+   16 | #include <globus/common.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b0b82.dir/build.make:66: CMakeFiles/cmTC_b0b82.dir/H5_HAVE_GLOBUS_COMMON_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_b0b82/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <sys/timeb.h>
+#include <globus/common.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pdb.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd5f4/fast && /usr/bin/make -f CMakeFiles/cmTC_bd5f4.dir/build.make CMakeFiles/cmTC_bd5f4.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bd5f4.dir/H5_HAVE_PDB_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_bd5f4.dir/H5_HAVE_PDB_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_PDB_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_PDB_H.c:16:10: fatal error: pdb.h: File o directory non esistente
+   16 | #include <pdb.h>
+      |          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_bd5f4.dir/build.make:66: CMakeFiles/cmTC_bd5f4.dir/H5_HAVE_PDB_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_bd5f4/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <sys/timeb.h>
+#include <pdb.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;srbclient.h exist failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cfadf/fast && /usr/bin/make -f CMakeFiles/cmTC_cfadf.dir/build.make CMakeFiles/cmTC_cfadf.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_cfadf.dir/H5_HAVE_SRBCLIENT_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_cfadf.dir/H5_HAVE_SRBCLIENT_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SRBCLIENT_H.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SRBCLIENT_H.c:17:10: fatal error: srbclient.h: File o directory non esistente
+   17 | #include <srbclient.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_cfadf.dir/build.make:66: CMakeFiles/cmTC_cfadf.dir/H5_HAVE_SRBCLIENT_H.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_cfadf/fast] Errore 2
+
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <sys/timeb.h>
+#include <pthread.h>
+#include <srbclient.h>
+
+
+int main(void){return 0;}
+
+Determining if the function WSAStartup exists in the ws2_32;m;dl failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2d64/fast && /usr/bin/make -f CMakeFiles/cmTC_e2d64.dir/build.make CMakeFiles/cmTC_e2d64.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e2d64.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTC_e2d64.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e2d64
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2d64.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=WSAStartup    CMakeFiles/cmTC_e2d64.dir/CheckFunctionExists.c.o  -o cmTC_e2d64  -lws2_32 -lm -ldl 
+/usr/bin/ld: impossibile trovare -lws2_32
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e2d64.dir/build.make:87: cmTC_e2d64] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_e2d64/fast] Errore 2
+
+
+
+Determining if the function gethostbyname exists in the wsock32;m;dl failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d4b7f/fast && /usr/bin/make -f CMakeFiles/cmTC_d4b7f.dir/build.make CMakeFiles/cmTC_d4b7f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d4b7f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_d4b7f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4b7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4b7f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_d4b7f.dir/CheckFunctionExists.c.o  -o cmTC_d4b7f  -lwsock32 -lm -ldl 
+/usr/bin/ld: impossibile trovare -lwsock32
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d4b7f.dir/build.make:87: cmTC_d4b7f] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_d4b7f/fast] Errore 2
+
+
+
+Determining if the function gethostname exists in the ucb;m;dl failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81474/fast && /usr/bin/make -f CMakeFiles/cmTC_81474.dir/build.make CMakeFiles/cmTC_81474.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_81474.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTC_81474.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_81474
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81474.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostname    CMakeFiles/cmTC_81474.dir/CheckFunctionExists.c.o  -o cmTC_81474  -lucb -lm -ldl 
+/usr/bin/ld: impossibile trovare -lucb
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_81474.dir/build.make:87: cmTC_81474] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_81474/fast] Errore 2
+
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2bc9f/fast && /usr/bin/make -f CMakeFiles/cmTC_2bc9f.dir/build.make CMakeFiles/cmTC_2bc9f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2bc9f.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_2bc9f.dir/H5_SIZEOF___INT64.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+   23 | #define SIZE (sizeof(__int64))
+      |                      ^~~~~~~
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   25 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+make[1]: *** [CMakeFiles/cmTC_2bc9f.dir/build.make:66: CMakeFiles/cmTC_2bc9f.dir/H5_SIZEOF___INT64.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_2bc9f/fast] Errore 2
+
+
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the variable CLOCK_MONOTONIC exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43217/fast && /usr/bin/make -f CMakeFiles/cmTC_43217.dir/build.make CMakeFiles/cmTC_43217.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_43217.dir/CheckVariableExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC   -o CMakeFiles/cmTC_43217.dir/CheckVariableExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckVariableExists.c
+Linking C executable cmTC_43217
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43217.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC    CMakeFiles/cmTC_43217.dir/CheckVariableExists.c.o  -o cmTC_43217 
+/usr/bin/ld: CMakeFiles/cmTC_43217.dir/CheckVariableExists.c.o: in function `main':
+CheckVariableExists.c:(.text+0x29): undefined reference to `CLOCK_MONOTONIC'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_43217.dir/build.make:87: cmTC_43217] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_43217/fast] Errore 2
+
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3c9b/fast && /usr/bin/make -f CMakeFiles/cmTC_e3c9b.dir/build.make CMakeFiles/cmTC_e3c9b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e3c9b.dir/HDFTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -o CMakeFiles/cmTC_e3c9b.dir/HDFTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:181:30: error: ‘struct tm’ has no member named ‘__tm_gmtoff’; did you mean ‘tm_gmtoff’?
+  181 | SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+      |                              ^~~~~~~~~~~
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+   12 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
+      |                                    ^
+make[1]: *** [CMakeFiles/cmTC_e3c9b.dir/build.make:66: CMakeFiles/cmTC_e3c9b.dir/HDFTests.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_e3c9b/fast] Errore 2
+
+
+Performing Other Test HAVE_TM_ZONE failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d3fed/fast && /usr/bin/make -f CMakeFiles/cmTC_d3fed.dir/build.make CMakeFiles/cmTC_d3fed.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d3fed.dir/HDFTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -DHAVE_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -o CMakeFiles/cmTC_d3fed.dir/HDFTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c
+Linking C executable cmTC_d3fed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3fed.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_d3fed.dir/HDFTests.c.o  -o cmTC_d3fed  -lm -ldl 
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d3fed.dir/build.make:87: cmTC_d3fed] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_d3fed/fast] Errore 2
+
+
+Performing Other Test HAVE_STRUCT_TM_TM_ZONE failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56c50/fast && /usr/bin/make -f CMakeFiles/cmTC_56c50.dir/build.make CMakeFiles/cmTC_56c50.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_56c50.dir/HDFTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -DHAVE_STRUCT_TM_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -o CMakeFiles/cmTC_56c50.dir/HDFTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c
+Linking C executable cmTC_56c50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56c50.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_56c50.dir/HDFTests.c.o  -o cmTC_56c50  -lm -ldl 
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_56c50.dir/build.make:87: cmTC_56c50] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_56c50/fast] Errore 2
+
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9afab/fast && /usr/bin/make -f CMakeFiles/cmTC_9afab.dir/build.make CMakeFiles/cmTC_9afab.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_9afab.dir/HDFTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -o CMakeFiles/cmTC_9afab.dir/HDFTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:437:32: error: storage size of ‘w’ isn’t known
+  437 | SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+      |                                ^
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+   12 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
+      |                                    ^
+make[1]: *** [CMakeFiles/cmTC_9afab.dir/build.make:66: CMakeFiles/cmTC_9afab.dir/HDFTests.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_9afab/fast] Errore 2
+
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_06383/fast && /usr/bin/make -f CMakeFiles/cmTC_06383.dir/build.make CMakeFiles/cmTC_06383.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_06383.dir/HDFTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -o CMakeFiles/cmTC_06383.dir/HDFTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:443:30: error: storage size of ‘w’ isn’t known
+  443 | SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+      |                              ^
+/home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+   12 | #define SIMPLE_TEST(x) int main(){ x; return 0; }
+      |                                    ^
+make[1]: *** [CMakeFiles/cmTC_06383.dir/build.make:66: CMakeFiles/cmTC_06383.dir/HDFTests.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_06383/fast] Errore 2
+
+
+Determining if the function _getvideoconfig exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_90c7a/fast && /usr/bin/make -f CMakeFiles/cmTC_90c7a.dir/build.make CMakeFiles/cmTC_90c7a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_90c7a.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTC_90c7a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_90c7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90c7a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=_getvideoconfig    CMakeFiles/cmTC_90c7a.dir/CheckFunctionExists.c.o  -o cmTC_90c7a 
+/usr/bin/ld: CMakeFiles/cmTC_90c7a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `_getvideoconfig'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_90c7a.dir/build.make:87: cmTC_90c7a] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_90c7a/fast] Errore 2
+
+
+
+Determining if the function gettextinfo exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5ecd6/fast && /usr/bin/make -f CMakeFiles/cmTC_5ecd6.dir/build.make CMakeFiles/cmTC_5ecd6.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_5ecd6.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTC_5ecd6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ecd6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ecd6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gettextinfo    CMakeFiles/cmTC_5ecd6.dir/CheckFunctionExists.c.o  -o cmTC_5ecd6 
+/usr/bin/ld: CMakeFiles/cmTC_5ecd6.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `gettextinfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5ecd6.dir/build.make:87: cmTC_5ecd6] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_5ecd6/fast] Errore 2
+
+
+
+Determining if the function _scrsize exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a6bf1/fast && /usr/bin/make -f CMakeFiles/cmTC_a6bf1.dir/build.make CMakeFiles/cmTC_a6bf1.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a6bf1.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTC_a6bf1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6bf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6bf1.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=_scrsize    CMakeFiles/cmTC_a6bf1.dir/CheckFunctionExists.c.o  -o cmTC_a6bf1 
+/usr/bin/ld: CMakeFiles/cmTC_a6bf1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `_scrsize'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a6bf1.dir/build.make:87: cmTC_a6bf1] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_a6bf1/fast] Errore 2
+
+
+
+Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_44b33/fast && /usr/bin/make -f CMakeFiles/cmTC_44b33.dir/build.make CMakeFiles/cmTC_44b33.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_44b33.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTC_44b33.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_44b33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44b33.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo    CMakeFiles/cmTC_44b33.dir/CheckFunctionExists.c.o  -o cmTC_44b33 
+/usr/bin/ld: CMakeFiles/cmTC_44b33.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `GetConsoleScreenBufferInfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_44b33.dir/build.make:87: cmTC_44b33] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_44b33/fast] Errore 2
+
+
+
+Determining if the function llround exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4817a/fast && /usr/bin/make -f CMakeFiles/cmTC_4817a.dir/build.make CMakeFiles/cmTC_4817a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4817a.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=llround   -o CMakeFiles/cmTC_4817a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘llround’; expected ‘long long int(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘llround’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_4817a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4817a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=llround    CMakeFiles/cmTC_4817a.dir/CheckFunctionExists.c.o  -o cmTC_4817a 
+/usr/bin/ld: CMakeFiles/cmTC_4817a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `llround'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4817a.dir/build.make:87: cmTC_4817a] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_4817a/fast] Errore 2
+
+
+
+Determining if the function llroundf exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f46b9/fast && /usr/bin/make -f CMakeFiles/cmTC_f46b9.dir/build.make CMakeFiles/cmTC_f46b9.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f46b9.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=llroundf   -o CMakeFiles/cmTC_f46b9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘llroundf’; expected ‘long long int(float)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘llroundf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_f46b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f46b9.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=llroundf    CMakeFiles/cmTC_f46b9.dir/CheckFunctionExists.c.o  -o cmTC_f46b9 
+/usr/bin/ld: CMakeFiles/cmTC_f46b9.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `llroundf'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f46b9.dir/build.make:87: cmTC_f46b9] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_f46b9/fast] Errore 2
+
+
+
+Determining if the function lround exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_96e9a/fast && /usr/bin/make -f CMakeFiles/cmTC_96e9a.dir/build.make CMakeFiles/cmTC_96e9a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_96e9a.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lround   -o CMakeFiles/cmTC_96e9a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘lround’; expected ‘long int(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘lround’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_96e9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96e9a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lround    CMakeFiles/cmTC_96e9a.dir/CheckFunctionExists.c.o  -o cmTC_96e9a 
+/usr/bin/ld: CMakeFiles/cmTC_96e9a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `lround'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_96e9a.dir/build.make:87: cmTC_96e9a] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_96e9a/fast] Errore 2
+
+
+
+Determining if the function lroundf exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d1ce7/fast && /usr/bin/make -f CMakeFiles/cmTC_d1ce7.dir/build.make CMakeFiles/cmTC_d1ce7.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d1ce7.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lroundf   -o CMakeFiles/cmTC_d1ce7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘lroundf’; expected ‘long int(float)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘lroundf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_d1ce7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1ce7.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lroundf    CMakeFiles/cmTC_d1ce7.dir/CheckFunctionExists.c.o  -o cmTC_d1ce7 
+/usr/bin/ld: CMakeFiles/cmTC_d1ce7.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `lroundf'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d1ce7.dir/build.make:87: cmTC_d1ce7] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_d1ce7/fast] Errore 2
+
+
+
+Determining if the function round exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f9651/fast && /usr/bin/make -f CMakeFiles/cmTC_f9651.dir/build.make CMakeFiles/cmTC_f9651.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f9651.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=round   -o CMakeFiles/cmTC_f9651.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘round’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘round’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_f9651
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9651.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=round    CMakeFiles/cmTC_f9651.dir/CheckFunctionExists.c.o  -o cmTC_f9651 
+/usr/bin/ld: CMakeFiles/cmTC_f9651.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `round'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f9651.dir/build.make:87: cmTC_f9651] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_f9651/fast] Errore 2
+
+
+
+Determining if the function roundf exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17dce/fast && /usr/bin/make -f CMakeFiles/cmTC_17dce.dir/build.make CMakeFiles/cmTC_17dce.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_17dce.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=roundf   -o CMakeFiles/cmTC_17dce.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘roundf’; expected ‘float(float)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘roundf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_17dce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17dce.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=roundf    CMakeFiles/cmTC_17dce.dir/CheckFunctionExists.c.o  -o cmTC_17dce 
+/usr/bin/ld: CMakeFiles/cmTC_17dce.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `roundf'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_17dce.dir/build.make:87: cmTC_17dce] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_17dce/fast] Errore 2
+
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fc050/fast && /usr/bin/make -f CMakeFiles/cmTC_fc050.dir/build.make CMakeFiles/cmTC_fc050.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_fc050.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTC_fc050.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fc050
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc050.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=setsysinfo    CMakeFiles/cmTC_fc050.dir/CheckFunctionExists.c.o  -o cmTC_fc050 
+/usr/bin/ld: CMakeFiles/cmTC_fc050.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fc050.dir/build.make:87: cmTC_fc050] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_fc050/fast] Errore 2
+
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ca9b8/fast && /usr/bin/make -f CMakeFiles/cmTC_ca9b8.dir/build.make CMakeFiles/cmTC_ca9b8.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ca9b8.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTC_ca9b8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ca9b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca9b8.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=sigsetjmp    CMakeFiles/cmTC_ca9b8.dir/CheckFunctionExists.c.o  -o cmTC_ca9b8 
+/usr/bin/ld: CMakeFiles/cmTC_ca9b8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ca9b8.dir/build.make:87: cmTC_ca9b8] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_ca9b8/fast] Errore 2
+
+
+
+Determining if the function clock_gettime exists in the posix4 failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bae65/fast && /usr/bin/make -f CMakeFiles/cmTC_bae65.dir/build.make CMakeFiles/cmTC_bae65.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bae65.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_bae65.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bae65
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bae65.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTC_bae65.dir/CheckFunctionExists.c.o  -o cmTC_bae65  -lposix4 
+/usr/bin/ld: impossibile trovare -lposix4
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bae65.dir/build.make:87: cmTC_bae65] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_bae65/fast] Errore 2
+
+
+
+Determining size of _Quad failed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f25f8/fast && /usr/bin/make -f CMakeFiles/cmTC_f25f8.dir/build.make CMakeFiles/cmTC_f25f8.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f25f8.dir/H5_SIZEOF__QUAD.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f25f8.dir/H5_SIZEOF__QUAD.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF__QUAD.c
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF__QUAD.c:23:22: error: ‘_Quad’ undeclared here (not in a function)
+   23 | #define SIZE (sizeof(_Quad))
+      |                      ^~~~~
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF__QUAD.c:25:12: note: in expansion of macro ‘SIZE’
+   25 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+make[1]: *** [CMakeFiles/cmTC_f25f8.dir/build.make:66: CMakeFiles/cmTC_f25f8.dir/H5_SIZEOF__QUAD.c.o] Errore 1
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_f25f8/fast] Errore 2
+
+
+/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF__QUAD.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(_Quad))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Test H5_LDOUBLE_TO_LONG_SPECIAL Run failed with the following output and exit code:
+ Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d64e1/fast && /usr/bin/make -f CMakeFiles/cmTC_d64e1.dir/build.make CMakeFiles/cmTC_d64e1.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d64e1.dir/ConversionTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DH5_LDOUBLE_TO_LONG_SPECIAL_TEST   -o CMakeFiles/cmTC_d64e1.dir/ConversionTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_d64e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d64e1.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DH5_LDOUBLE_TO_LONG_SPECIAL_TEST    CMakeFiles/cmTC_d64e1.dir/ConversionTests.c.o  -o cmTC_d64e1 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+Test H5_LONG_TO_LDOUBLE_SPECIAL Run failed with the following output and exit code:
+ Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba2cc/fast && /usr/bin/make -f CMakeFiles/cmTC_ba2cc.dir/build.make CMakeFiles/cmTC_ba2cc.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ba2cc.dir/ConversionTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DH5_LONG_TO_LDOUBLE_SPECIAL_TEST   -o CMakeFiles/cmTC_ba2cc.dir/ConversionTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_ba2cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba2cc.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DH5_LONG_TO_LDOUBLE_SPECIAL_TEST    CMakeFiles/cmTC_ba2cc.dir/ConversionTests.c.o  -o cmTC_ba2cc 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+Test H5_DISABLE_SOME_LDOUBLE_CONV Run failed with the following output and exit code:
+ Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_414f7/fast && /usr/bin/make -f CMakeFiles/cmTC_414f7.dir/build.make CMakeFiles/cmTC_414f7.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_414f7.dir/ConversionTests.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DH5_DISABLE_SOME_LDOUBLE_CONV_TEST   -o CMakeFiles/cmTC_414f7.dir/ConversionTests.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/thirdparty/hdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_414f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_414f7.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DH5_DISABLE_SOME_LDOUBLE_CONV_TEST    CMakeFiles/cmTC_414f7.dir/ConversionTests.c.o  -o cmTC_414f7 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+

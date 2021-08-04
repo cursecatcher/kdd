@@ -1,0 +1,2180 @@
+The system is: Linux - 5.8.0-59-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a102b/fast && /usr/bin/make -f CMakeFiles/cmTC_a102b.dir/build.make CMakeFiles/cmTC_a102b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a102b.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a102b.dir/testCCompiler.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a102b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a102b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a102b.dir/testCCompiler.c.o  -o cmTC_a102b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aa8b8/fast && /usr/bin/make -f CMakeFiles/cmTC_aa8b8.dir/build.make CMakeFiles/cmTC_aa8b8.dir/build
+make[1]: Entering directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWILq2I.s
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o /tmp/ccWILq2I.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_aa8b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa8b8.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o  -o cmTC_aa8b8 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa8b8' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwa4dUb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa8b8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa8b8' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_aa8b8/fast && /usr/bin/make -f CMakeFiles/cmTC_aa8b8.dir/build.make CMakeFiles/cmTC_aa8b8.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWILq2I.s]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o /tmp/ccWILq2I.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_aa8b8]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa8b8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o  -o cmTC_aa8b8 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_aa8b8' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwa4dUb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_aa8b8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwa4dUb.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_aa8b8] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_aa8b8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1e427/fast && /usr/bin/make -f CMakeFiles/cmTC_1e427.dir/build.make CMakeFiles/cmTC_1e427.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_1e427.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_1e427.dir/testCXXCompiler.cxx.o -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1e427
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e427.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_1e427.dir/testCXXCompiler.cxx.o  -o cmTC_1e427 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e68a5/fast && /usr/bin/make -f CMakeFiles/cmTC_e68a5.dir/build.make CMakeFiles/cmTC_e68a5.dir/build
+make[1]: Entering directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc549WEF.s
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc549WEF.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_e68a5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e68a5.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e68a5 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e68a5' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumOWY8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e68a5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e68a5' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_e68a5/fast && /usr/bin/make -f CMakeFiles/cmTC_e68a5.dir/build.make CMakeFiles/cmTC_e68a5.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc549WEF.s]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc549WEF.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_e68a5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e68a5.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e68a5 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e68a5' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumOWY8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e68a5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccumOWY8.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e68a5] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_e68a5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bb4e0/fast && /usr/bin/make -f CMakeFiles/cmTC_bb4e0.dir/build.make CMakeFiles/cmTC_bb4e0.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bb4e0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bb4e0.dir/CheckIncludeFile.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bb4e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb4e0.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_bb4e0.dir/CheckIncludeFile.c.o  -o cmTC_bb4e0 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d05ed/fast && /usr/bin/make -f CMakeFiles/cmTC_d05ed.dir/build.make CMakeFiles/cmTC_d05ed.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d05ed.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d05ed.dir/CheckIncludeFile.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d05ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d05ed.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_d05ed.dir/CheckIncludeFile.c.o  -o cmTC_d05ed 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8de41/fast && /usr/bin/make -f CMakeFiles/cmTC_8de41.dir/build.make CMakeFiles/cmTC_8de41.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8de41.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8de41.dir/CheckIncludeFile.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8de41
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8de41.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8de41.dir/CheckIncludeFile.c.o  -o cmTC_8de41 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of __uint128_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_698bd/fast && /usr/bin/make -f CMakeFiles/cmTC_698bd.dir/build.make CMakeFiles/cmTC_698bd.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_698bd.dir/int128_t_USE__uint128_t.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_698bd.dir/int128_t_USE__uint128_t.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/int128_t_USE__uint128_t.c
+Linking C executable cmTC_698bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_698bd.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_698bd.dir/int128_t_USE__uint128_t.c.o  -o cmTC_698bd 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fcc17/fast && /usr/bin/make -f CMakeFiles/cmTC_fcc17.dir/build.make CMakeFiles/cmTC_fcc17.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_fcc17.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_fcc17.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_fcc17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcc17.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_fcc17.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_fcc17 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6a468/fast && /usr/bin/make -f CMakeFiles/cmTC_6a468.dir/build.make CMakeFiles/cmTC_6a468.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_6a468.dir/TestEndianess.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_6a468.dir/TestEndianess.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_6a468
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a468.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_6a468.dir/TestEndianess.c.o  -o cmTC_6a468 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files ;sys/file.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0f28/fast && /usr/bin/make -f CMakeFiles/cmTC_b0f28.dir/build.make CMakeFiles/cmTC_b0f28.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b0f28.dir/H5_HAVE_SYS_FILE_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b0f28.dir/H5_HAVE_SYS_FILE_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_FILE_H.c
+Linking C executable cmTC_b0f28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0f28.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b0f28.dir/H5_HAVE_SYS_FILE_H.c.o  -o cmTC_b0f28 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83171/fast && /usr/bin/make -f CMakeFiles/cmTC_83171.dir/build.make CMakeFiles/cmTC_83171.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_83171.dir/H5_HAVE_SYS_IOCTL_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_83171.dir/H5_HAVE_SYS_IOCTL_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_IOCTL_H.c
+Linking C executable cmTC_83171
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83171.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_83171.dir/H5_HAVE_SYS_IOCTL_H.c.o  -o cmTC_83171 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0bec/fast && /usr/bin/make -f CMakeFiles/cmTC_b0bec.dir/build.make CMakeFiles/cmTC_b0bec.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b0bec.dir/H5_HAVE_SYS_RESOURCE_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b0bec.dir/H5_HAVE_SYS_RESOURCE_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_RESOURCE_H.c
+Linking C executable cmTC_b0bec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0bec.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b0bec.dir/H5_HAVE_SYS_RESOURCE_H.c.o  -o cmTC_b0bec 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bc5d9/fast && /usr/bin/make -f CMakeFiles/cmTC_bc5d9.dir/build.make CMakeFiles/cmTC_bc5d9.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bc5d9.dir/H5_HAVE_SYS_SOCKET_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_bc5d9.dir/H5_HAVE_SYS_SOCKET_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_SOCKET_H.c
+Linking C executable cmTC_bc5d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc5d9.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_bc5d9.dir/H5_HAVE_SYS_SOCKET_H.c.o  -o cmTC_bc5d9 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88c49/fast && /usr/bin/make -f CMakeFiles/cmTC_88c49.dir/build.make CMakeFiles/cmTC_88c49.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_88c49.dir/H5_HAVE_SYS_STAT_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_88c49.dir/H5_HAVE_SYS_STAT_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_STAT_H.c
+Linking C executable cmTC_88c49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88c49.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_88c49.dir/H5_HAVE_SYS_STAT_H.c.o  -o cmTC_88c49 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f6f6/fast && /usr/bin/make -f CMakeFiles/cmTC_4f6f6.dir/build.make CMakeFiles/cmTC_4f6f6.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4f6f6.dir/H5_HAVE_SYS_TIME_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_4f6f6.dir/H5_HAVE_SYS_TIME_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_TIME_H.c
+Linking C executable cmTC_4f6f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f6f6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_4f6f6.dir/H5_HAVE_SYS_TIME_H.c.o  -o cmTC_4f6f6 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8d4a/fast && /usr/bin/make -f CMakeFiles/cmTC_a8d4a.dir/build.make CMakeFiles/cmTC_a8d4a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a8d4a.dir/H5_HAVE_SYS_TYPES_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_a8d4a.dir/H5_HAVE_SYS_TYPES_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_TYPES_H.c
+Linking C executable cmTC_a8d4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8d4a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_a8d4a.dir/H5_HAVE_SYS_TYPES_H.c.o  -o cmTC_a8d4a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b40d6/fast && /usr/bin/make -f CMakeFiles/cmTC_b40d6.dir/build.make CMakeFiles/cmTC_b40d6.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b40d6.dir/H5_HAVE_FEATURES_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b40d6.dir/H5_HAVE_FEATURES_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_FEATURES_H.c
+Linking C executable cmTC_b40d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b40d6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b40d6.dir/H5_HAVE_FEATURES_H.c.o  -o cmTC_b40d6 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a746b/fast && /usr/bin/make -f CMakeFiles/cmTC_a746b.dir/build.make CMakeFiles/cmTC_a746b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a746b.dir/H5_HAVE_DIRENT_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_a746b.dir/H5_HAVE_DIRENT_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_DIRENT_H.c
+Linking C executable cmTC_a746b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a746b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_a746b.dir/H5_HAVE_DIRENT_H.c.o  -o cmTC_a746b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ac91a/fast && /usr/bin/make -f CMakeFiles/cmTC_ac91a.dir/build.make CMakeFiles/cmTC_ac91a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ac91a.dir/H5_HAVE_SETJMP_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_ac91a.dir/H5_HAVE_SETJMP_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SETJMP_H.c
+Linking C executable cmTC_ac91a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac91a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_ac91a.dir/H5_HAVE_SETJMP_H.c.o  -o cmTC_ac91a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7433a/fast && /usr/bin/make -f CMakeFiles/cmTC_7433a.dir/build.make CMakeFiles/cmTC_7433a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7433a.dir/H5_HAVE_STDDEF_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_7433a.dir/H5_HAVE_STDDEF_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STDDEF_H.c
+Linking C executable cmTC_7433a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7433a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_7433a.dir/H5_HAVE_STDDEF_H.c.o  -o cmTC_7433a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_22bf5/fast && /usr/bin/make -f CMakeFiles/cmTC_22bf5.dir/build.make CMakeFiles/cmTC_22bf5.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_22bf5.dir/H5_HAVE_STDINT_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_22bf5.dir/H5_HAVE_STDINT_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STDINT_H.c
+Linking C executable cmTC_22bf5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22bf5.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_22bf5.dir/H5_HAVE_STDINT_H.c.o  -o cmTC_22bf5 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bfce0/fast && /usr/bin/make -f CMakeFiles/cmTC_bfce0.dir/build.make CMakeFiles/cmTC_bfce0.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bfce0.dir/H5_HAVE_UNISTD_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_bfce0.dir/H5_HAVE_UNISTD_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_UNISTD_H.c
+Linking C executable cmTC_bfce0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfce0.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_bfce0.dir/H5_HAVE_UNISTD_H.c.o  -o cmTC_bfce0 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f78de/fast && /usr/bin/make -f CMakeFiles/cmTC_f78de.dir/build.make CMakeFiles/cmTC_f78de.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f78de.dir/H5_HAVE_SYS_TIMEB_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f78de.dir/H5_HAVE_SYS_TIMEB_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_SYS_TIMEB_H.c
+Linking C executable cmTC_f78de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f78de.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_f78de.dir/H5_HAVE_SYS_TIMEB_H.c.o  -o cmTC_f78de 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7136f/fast && /usr/bin/make -f CMakeFiles/cmTC_7136f.dir/build.make CMakeFiles/cmTC_7136f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7136f.dir/H5_HAVE_PTHREAD_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_7136f.dir/H5_HAVE_PTHREAD_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_PTHREAD_H.c
+Linking C executable cmTC_7136f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7136f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_7136f.dir/H5_HAVE_PTHREAD_H.c.o  -o cmTC_7136f 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8e597/fast && /usr/bin/make -f CMakeFiles/cmTC_8e597.dir/build.make CMakeFiles/cmTC_8e597.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8e597.dir/H5_HAVE_STRING_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_8e597.dir/H5_HAVE_STRING_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STRING_H.c
+Linking C executable cmTC_8e597
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e597.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_8e597.dir/H5_HAVE_STRING_H.c.o  -o cmTC_8e597 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_53c86/fast && /usr/bin/make -f CMakeFiles/cmTC_53c86.dir/build.make CMakeFiles/cmTC_53c86.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_53c86.dir/H5_HAVE_STRINGS_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_53c86.dir/H5_HAVE_STRINGS_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STRINGS_H.c
+Linking C executable cmTC_53c86
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53c86.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_53c86.dir/H5_HAVE_STRINGS_H.c.o  -o cmTC_53c86 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07bcd/fast && /usr/bin/make -f CMakeFiles/cmTC_07bcd.dir/build.make CMakeFiles/cmTC_07bcd.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_07bcd.dir/H5_HAVE_STDLIB_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_07bcd.dir/H5_HAVE_STDLIB_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STDLIB_H.c
+Linking C executable cmTC_07bcd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07bcd.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_07bcd.dir/H5_HAVE_STDLIB_H.c.o  -o cmTC_07bcd 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h;memory.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef0fb/fast && /usr/bin/make -f CMakeFiles/cmTC_ef0fb.dir/build.make CMakeFiles/cmTC_ef0fb.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_ef0fb.dir/H5_HAVE_MEMORY_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_ef0fb.dir/H5_HAVE_MEMORY_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_MEMORY_H.c
+Linking C executable cmTC_ef0fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef0fb.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_ef0fb.dir/H5_HAVE_MEMORY_H.c.o  -o cmTC_ef0fb 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h;memory.h;dlfcn.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d8cd/fast && /usr/bin/make -f CMakeFiles/cmTC_2d8cd.dir/build.make CMakeFiles/cmTC_2d8cd.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2d8cd.dir/H5_HAVE_DLFCN_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_2d8cd.dir/H5_HAVE_DLFCN_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_DLFCN_H.c
+Linking C executable cmTC_2d8cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8cd.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_2d8cd.dir/H5_HAVE_DLFCN_H.c.o  -o cmTC_2d8cd 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h;memory.h;dlfcn.h;inttypes.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c9aae/fast && /usr/bin/make -f CMakeFiles/cmTC_c9aae.dir/build.make CMakeFiles/cmTC_c9aae.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c9aae.dir/H5_HAVE_INTTYPES_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_c9aae.dir/H5_HAVE_INTTYPES_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_INTTYPES_H.c
+Linking C executable cmTC_c9aae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9aae.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_c9aae.dir/H5_HAVE_INTTYPES_H.c.o  -o cmTC_c9aae 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h;memory.h;dlfcn.h;inttypes.h;netinet/in.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6b10b/fast && /usr/bin/make -f CMakeFiles/cmTC_6b10b.dir/build.make CMakeFiles/cmTC_6b10b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_6b10b.dir/H5_HAVE_NETINET_IN_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_6b10b.dir/H5_HAVE_NETINET_IN_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_NETINET_IN_H.c
+Linking C executable cmTC_6b10b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b10b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_6b10b.dir/H5_HAVE_NETINET_IN_H.c.o  -o cmTC_6b10b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;sys/timeb.h;pthread.h;string.h;strings.h;stdlib.h;memory.h;dlfcn.h;inttypes.h;netinet/in.h;stdbool.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fdfe6/fast && /usr/bin/make -f CMakeFiles/cmTC_fdfe6.dir/build.make CMakeFiles/cmTC_fdfe6.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_fdfe6.dir/H5_HAVE_STDBOOL_H.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_fdfe6.dir/H5_HAVE_STDBOOL_H.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/H5_HAVE_STDBOOL_H.c
+Linking C executable cmTC_fdfe6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdfe6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_fdfe6.dir/H5_HAVE_STDBOOL_H.c.o  -o cmTC_fdfe6 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if files quadmath.h exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5bf9e/fast && /usr/bin/make -f CMakeFiles/cmTC_5bf9e.dir/build.make CMakeFiles/cmTC_5bf9e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_5bf9e.dir/C_HAVE_QUADMATH.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_5bf9e.dir/C_HAVE_QUADMATH.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckIncludeFiles/C_HAVE_QUADMATH.c
+Linking C executable cmTC_5bf9e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bf9e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_5bf9e.dir/C_HAVE_QUADMATH.c.o  -o cmTC_5bf9e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function ceil exists in the m; passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03f98/fast && /usr/bin/make -f CMakeFiles/cmTC_03f98.dir/build.make CMakeFiles/cmTC_03f98.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_03f98.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=ceil   -o CMakeFiles/cmTC_03f98.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘ceil’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘ceil’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_03f98
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03f98.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=ceil    CMakeFiles/cmTC_03f98.dir/CheckFunctionExists.c.o  -o cmTC_03f98  -lm 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function dlopen exists in the dl;m passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_54866/fast && /usr/bin/make -f CMakeFiles/cmTC_54866.dir/build.make CMakeFiles/cmTC_54866.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_54866.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_54866.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_54866
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54866.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_54866.dir/CheckFunctionExists.c.o  -o cmTC_54866  -ldl -lm 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function lseek64 exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8041a/fast && /usr/bin/make -f CMakeFiles/cmTC_8041a.dir/build.make CMakeFiles/cmTC_8041a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8041a.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lseek64   -o CMakeFiles/cmTC_8041a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8041a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8041a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lseek64    CMakeFiles/cmTC_8041a.dir/CheckFunctionExists.c.o  -o cmTC_8041a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bce25/fast && /usr/bin/make -f CMakeFiles/cmTC_bce25.dir/build.make CMakeFiles/cmTC_bce25.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bce25.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fseeko   -o CMakeFiles/cmTC_bce25.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bce25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bce25.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fseeko    CMakeFiles/cmTC_bce25.dir/CheckFunctionExists.c.o  -o cmTC_bce25 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function stat64 exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8b863/fast && /usr/bin/make -f CMakeFiles/cmTC_8b863.dir/build.make CMakeFiles/cmTC_8b863.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8b863.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=stat64   -o CMakeFiles/cmTC_8b863.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b863
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b863.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=stat64    CMakeFiles/cmTC_8b863.dir/CheckFunctionExists.c.o  -o cmTC_8b863 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of char passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9516b/fast && /usr/bin/make -f CMakeFiles/cmTC_9516b.dir/build.make CMakeFiles/cmTC_9516b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_9516b.dir/H5_SIZEOF_CHAR.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_9516b.dir/H5_SIZEOF_CHAR.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_CHAR.c
+Linking C executable cmTC_9516b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9516b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_9516b.dir/H5_SIZEOF_CHAR.c.o  -o cmTC_9516b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of short passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_29780/fast && /usr/bin/make -f CMakeFiles/cmTC_29780.dir/build.make CMakeFiles/cmTC_29780.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_29780.dir/H5_SIZEOF_SHORT.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_29780.dir/H5_SIZEOF_SHORT.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_SHORT.c
+Linking C executable cmTC_29780
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29780.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_29780.dir/H5_SIZEOF_SHORT.c.o  -o cmTC_29780 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f9f89/fast && /usr/bin/make -f CMakeFiles/cmTC_f9f89.dir/build.make CMakeFiles/cmTC_f9f89.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f9f89.dir/H5_SIZEOF_INT.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f9f89.dir/H5_SIZEOF_INT.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT.c
+Linking C executable cmTC_f9f89
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9f89.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_f9f89.dir/H5_SIZEOF_INT.c.o  -o cmTC_f9f89 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of unsigned passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f020e/fast && /usr/bin/make -f CMakeFiles/cmTC_f020e.dir/build.make CMakeFiles/cmTC_f020e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f020e.dir/H5_SIZEOF_UNSIGNED.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f020e.dir/H5_SIZEOF_UNSIGNED.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UNSIGNED.c
+Linking C executable cmTC_f020e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f020e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_f020e.dir/H5_SIZEOF_UNSIGNED.c.o  -o cmTC_f020e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_14040/fast && /usr/bin/make -f CMakeFiles/cmTC_14040.dir/build.make CMakeFiles/cmTC_14040.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_14040.dir/H5_SIZEOF_LONG.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_14040.dir/H5_SIZEOF_LONG.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_LONG.c
+Linking C executable cmTC_14040
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14040.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_14040.dir/H5_SIZEOF_LONG.c.o  -o cmTC_14040 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13a30/fast && /usr/bin/make -f CMakeFiles/cmTC_13a30.dir/build.make CMakeFiles/cmTC_13a30.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_13a30.dir/H5_SIZEOF_LONG_LONG.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_13a30.dir/H5_SIZEOF_LONG_LONG.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_LONG_LONG.c
+Linking C executable cmTC_13a30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13a30.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_13a30.dir/H5_SIZEOF_LONG_LONG.c.o  -o cmTC_13a30 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of float passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_398e9/fast && /usr/bin/make -f CMakeFiles/cmTC_398e9.dir/build.make CMakeFiles/cmTC_398e9.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_398e9.dir/H5_SIZEOF_FLOAT.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_398e9.dir/H5_SIZEOF_FLOAT.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_FLOAT.c
+Linking C executable cmTC_398e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_398e9.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_398e9.dir/H5_SIZEOF_FLOAT.c.o  -o cmTC_398e9 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of double passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f66d/fast && /usr/bin/make -f CMakeFiles/cmTC_4f66d.dir/build.make CMakeFiles/cmTC_4f66d.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4f66d.dir/H5_SIZEOF_DOUBLE.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_4f66d.dir/H5_SIZEOF_DOUBLE.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_DOUBLE.c
+Linking C executable cmTC_4f66d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f66d.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_4f66d.dir/H5_SIZEOF_DOUBLE.c.o  -o cmTC_4f66d 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of long double passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2f83a/fast && /usr/bin/make -f CMakeFiles/cmTC_2f83a.dir/build.make CMakeFiles/cmTC_2f83a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2f83a.dir/H5_SIZEOF_LONG_DOUBLE.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_2f83a.dir/H5_SIZEOF_LONG_DOUBLE.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_LONG_DOUBLE.c
+Linking C executable cmTC_2f83a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f83a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_2f83a.dir/H5_SIZEOF_LONG_DOUBLE.c.o  -o cmTC_2f83a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c2dab/fast && /usr/bin/make -f CMakeFiles/cmTC_c2dab.dir/build.make CMakeFiles/cmTC_c2dab.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c2dab.dir/H5_SIZEOF_INT8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_c2dab.dir/H5_SIZEOF_INT8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT8_T.c
+Linking C executable cmTC_c2dab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2dab.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_c2dab.dir/H5_SIZEOF_INT8_T.c.o  -o cmTC_c2dab 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d17c/fast && /usr/bin/make -f CMakeFiles/cmTC_7d17c.dir/build.make CMakeFiles/cmTC_7d17c.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7d17c.dir/H5_SIZEOF_UINT8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_7d17c.dir/H5_SIZEOF_UINT8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT8_T.c
+Linking C executable cmTC_7d17c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d17c.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_7d17c.dir/H5_SIZEOF_UINT8_T.c.o  -o cmTC_7d17c 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_least8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b961f/fast && /usr/bin/make -f CMakeFiles/cmTC_b961f.dir/build.make CMakeFiles/cmTC_b961f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b961f.dir/H5_SIZEOF_INT_LEAST8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b961f.dir/H5_SIZEOF_INT_LEAST8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_LEAST8_T.c
+Linking C executable cmTC_b961f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b961f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b961f.dir/H5_SIZEOF_INT_LEAST8_T.c.o  -o cmTC_b961f 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_least8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82d5d/fast && /usr/bin/make -f CMakeFiles/cmTC_82d5d.dir/build.make CMakeFiles/cmTC_82d5d.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_82d5d.dir/H5_SIZEOF_UINT_LEAST8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_82d5d.dir/H5_SIZEOF_UINT_LEAST8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_LEAST8_T.c
+Linking C executable cmTC_82d5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82d5d.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_82d5d.dir/H5_SIZEOF_UINT_LEAST8_T.c.o  -o cmTC_82d5d 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_fast8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8446/fast && /usr/bin/make -f CMakeFiles/cmTC_c8446.dir/build.make CMakeFiles/cmTC_c8446.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c8446.dir/H5_SIZEOF_INT_FAST8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_c8446.dir/H5_SIZEOF_INT_FAST8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_FAST8_T.c
+Linking C executable cmTC_c8446
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8446.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_c8446.dir/H5_SIZEOF_INT_FAST8_T.c.o  -o cmTC_c8446 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_fast8_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23ddf/fast && /usr/bin/make -f CMakeFiles/cmTC_23ddf.dir/build.make CMakeFiles/cmTC_23ddf.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_23ddf.dir/H5_SIZEOF_UINT_FAST8_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_23ddf.dir/H5_SIZEOF_UINT_FAST8_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_FAST8_T.c
+Linking C executable cmTC_23ddf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23ddf.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_23ddf.dir/H5_SIZEOF_UINT_FAST8_T.c.o  -o cmTC_23ddf 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cd8ce/fast && /usr/bin/make -f CMakeFiles/cmTC_cd8ce.dir/build.make CMakeFiles/cmTC_cd8ce.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_cd8ce.dir/H5_SIZEOF_INT16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_cd8ce.dir/H5_SIZEOF_INT16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT16_T.c
+Linking C executable cmTC_cd8ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd8ce.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_cd8ce.dir/H5_SIZEOF_INT16_T.c.o  -o cmTC_cd8ce 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0446/fast && /usr/bin/make -f CMakeFiles/cmTC_d0446.dir/build.make CMakeFiles/cmTC_d0446.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d0446.dir/H5_SIZEOF_UINT16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_d0446.dir/H5_SIZEOF_UINT16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT16_T.c
+Linking C executable cmTC_d0446
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0446.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_d0446.dir/H5_SIZEOF_UINT16_T.c.o  -o cmTC_d0446 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_least16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f738d/fast && /usr/bin/make -f CMakeFiles/cmTC_f738d.dir/build.make CMakeFiles/cmTC_f738d.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f738d.dir/H5_SIZEOF_INT_LEAST16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f738d.dir/H5_SIZEOF_INT_LEAST16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_LEAST16_T.c
+Linking C executable cmTC_f738d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f738d.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_f738d.dir/H5_SIZEOF_INT_LEAST16_T.c.o  -o cmTC_f738d 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_least16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82de6/fast && /usr/bin/make -f CMakeFiles/cmTC_82de6.dir/build.make CMakeFiles/cmTC_82de6.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_82de6.dir/H5_SIZEOF_UINT_LEAST16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_82de6.dir/H5_SIZEOF_UINT_LEAST16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_LEAST16_T.c
+Linking C executable cmTC_82de6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82de6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_82de6.dir/H5_SIZEOF_UINT_LEAST16_T.c.o  -o cmTC_82de6 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_fast16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1b81f/fast && /usr/bin/make -f CMakeFiles/cmTC_1b81f.dir/build.make CMakeFiles/cmTC_1b81f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_1b81f.dir/H5_SIZEOF_INT_FAST16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_1b81f.dir/H5_SIZEOF_INT_FAST16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_FAST16_T.c
+Linking C executable cmTC_1b81f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b81f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_1b81f.dir/H5_SIZEOF_INT_FAST16_T.c.o  -o cmTC_1b81f 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_fast16_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8af37/fast && /usr/bin/make -f CMakeFiles/cmTC_8af37.dir/build.make CMakeFiles/cmTC_8af37.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8af37.dir/H5_SIZEOF_UINT_FAST16_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_8af37.dir/H5_SIZEOF_UINT_FAST16_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_FAST16_T.c
+Linking C executable cmTC_8af37
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8af37.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_8af37.dir/H5_SIZEOF_UINT_FAST16_T.c.o  -o cmTC_8af37 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb8bb/fast && /usr/bin/make -f CMakeFiles/cmTC_cb8bb.dir/build.make CMakeFiles/cmTC_cb8bb.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_cb8bb.dir/H5_SIZEOF_INT32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_cb8bb.dir/H5_SIZEOF_INT32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT32_T.c
+Linking C executable cmTC_cb8bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb8bb.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_cb8bb.dir/H5_SIZEOF_INT32_T.c.o  -o cmTC_cb8bb 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e78e0/fast && /usr/bin/make -f CMakeFiles/cmTC_e78e0.dir/build.make CMakeFiles/cmTC_e78e0.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e78e0.dir/H5_SIZEOF_UINT32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_e78e0.dir/H5_SIZEOF_UINT32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT32_T.c
+Linking C executable cmTC_e78e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e78e0.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_e78e0.dir/H5_SIZEOF_UINT32_T.c.o  -o cmTC_e78e0 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_least32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_06bf1/fast && /usr/bin/make -f CMakeFiles/cmTC_06bf1.dir/build.make CMakeFiles/cmTC_06bf1.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_06bf1.dir/H5_SIZEOF_INT_LEAST32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_06bf1.dir/H5_SIZEOF_INT_LEAST32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_LEAST32_T.c
+Linking C executable cmTC_06bf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06bf1.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_06bf1.dir/H5_SIZEOF_INT_LEAST32_T.c.o  -o cmTC_06bf1 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_least32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5a99d/fast && /usr/bin/make -f CMakeFiles/cmTC_5a99d.dir/build.make CMakeFiles/cmTC_5a99d.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_5a99d.dir/H5_SIZEOF_UINT_LEAST32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_5a99d.dir/H5_SIZEOF_UINT_LEAST32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_LEAST32_T.c
+Linking C executable cmTC_5a99d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a99d.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_5a99d.dir/H5_SIZEOF_UINT_LEAST32_T.c.o  -o cmTC_5a99d 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_fast32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4d8b/fast && /usr/bin/make -f CMakeFiles/cmTC_b4d8b.dir/build.make CMakeFiles/cmTC_b4d8b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b4d8b.dir/H5_SIZEOF_INT_FAST32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b4d8b.dir/H5_SIZEOF_INT_FAST32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_FAST32_T.c
+Linking C executable cmTC_b4d8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4d8b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b4d8b.dir/H5_SIZEOF_INT_FAST32_T.c.o  -o cmTC_b4d8b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_fast32_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_de30b/fast && /usr/bin/make -f CMakeFiles/cmTC_de30b.dir/build.make CMakeFiles/cmTC_de30b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_de30b.dir/H5_SIZEOF_UINT_FAST32_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_de30b.dir/H5_SIZEOF_UINT_FAST32_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_FAST32_T.c
+Linking C executable cmTC_de30b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de30b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_de30b.dir/H5_SIZEOF_UINT_FAST32_T.c.o  -o cmTC_de30b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b3a30/fast && /usr/bin/make -f CMakeFiles/cmTC_b3a30.dir/build.make CMakeFiles/cmTC_b3a30.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b3a30.dir/H5_SIZEOF_INT64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_b3a30.dir/H5_SIZEOF_INT64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT64_T.c
+Linking C executable cmTC_b3a30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3a30.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_b3a30.dir/H5_SIZEOF_INT64_T.c.o  -o cmTC_b3a30 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8c994/fast && /usr/bin/make -f CMakeFiles/cmTC_8c994.dir/build.make CMakeFiles/cmTC_8c994.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8c994.dir/H5_SIZEOF_UINT64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_8c994.dir/H5_SIZEOF_UINT64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT64_T.c
+Linking C executable cmTC_8c994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c994.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_8c994.dir/H5_SIZEOF_UINT64_T.c.o  -o cmTC_8c994 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_least64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_12b28/fast && /usr/bin/make -f CMakeFiles/cmTC_12b28.dir/build.make CMakeFiles/cmTC_12b28.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_12b28.dir/H5_SIZEOF_INT_LEAST64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_12b28.dir/H5_SIZEOF_INT_LEAST64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_LEAST64_T.c
+Linking C executable cmTC_12b28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12b28.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_12b28.dir/H5_SIZEOF_INT_LEAST64_T.c.o  -o cmTC_12b28 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_least64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8d446/fast && /usr/bin/make -f CMakeFiles/cmTC_8d446.dir/build.make CMakeFiles/cmTC_8d446.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8d446.dir/H5_SIZEOF_UINT_LEAST64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_8d446.dir/H5_SIZEOF_UINT_LEAST64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_LEAST64_T.c
+Linking C executable cmTC_8d446
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d446.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_8d446.dir/H5_SIZEOF_UINT_LEAST64_T.c.o  -o cmTC_8d446 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of int_fast64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a9d25/fast && /usr/bin/make -f CMakeFiles/cmTC_a9d25.dir/build.make CMakeFiles/cmTC_a9d25.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a9d25.dir/H5_SIZEOF_INT_FAST64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_a9d25.dir/H5_SIZEOF_INT_FAST64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_INT_FAST64_T.c
+Linking C executable cmTC_a9d25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9d25.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_a9d25.dir/H5_SIZEOF_INT_FAST64_T.c.o  -o cmTC_a9d25 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of uint_fast64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a335a/fast && /usr/bin/make -f CMakeFiles/cmTC_a335a.dir/build.make CMakeFiles/cmTC_a335a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a335a.dir/H5_SIZEOF_UINT_FAST64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_a335a.dir/H5_SIZEOF_UINT_FAST64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_UINT_FAST64_T.c
+Linking C executable cmTC_a335a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a335a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_a335a.dir/H5_SIZEOF_UINT_FAST64_T.c.o  -o cmTC_a335a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_377fb/fast && /usr/bin/make -f CMakeFiles/cmTC_377fb.dir/build.make CMakeFiles/cmTC_377fb.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_377fb.dir/H5_SIZEOF_SIZE_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_377fb.dir/H5_SIZEOF_SIZE_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_SIZE_T.c
+Linking C executable cmTC_377fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_377fb.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_377fb.dir/H5_SIZEOF_SIZE_T.c.o  -o cmTC_377fb 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7e80d/fast && /usr/bin/make -f CMakeFiles/cmTC_7e80d.dir/build.make CMakeFiles/cmTC_7e80d.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_7e80d.dir/H5_SIZEOF_SSIZE_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_7e80d.dir/H5_SIZEOF_SSIZE_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_SSIZE_T.c
+Linking C executable cmTC_7e80d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e80d.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_7e80d.dir/H5_SIZEOF_SSIZE_T.c.o  -o cmTC_7e80d 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2025e/fast && /usr/bin/make -f CMakeFiles/cmTC_2025e.dir/build.make CMakeFiles/cmTC_2025e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2025e.dir/H5_SIZEOF_PTRDIFF_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_2025e.dir/H5_SIZEOF_PTRDIFF_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_PTRDIFF_T.c
+Linking C executable cmTC_2025e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2025e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_2025e.dir/H5_SIZEOF_PTRDIFF_T.c.o  -o cmTC_2025e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c704c/fast && /usr/bin/make -f CMakeFiles/cmTC_c704c.dir/build.make CMakeFiles/cmTC_c704c.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c704c.dir/H5_SIZEOF_OFF_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_c704c.dir/H5_SIZEOF_OFF_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF_T.c
+Linking C executable cmTC_c704c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c704c.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_c704c.dir/H5_SIZEOF_OFF_T.c.o  -o cmTC_c704c 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55a64/fast && /usr/bin/make -f CMakeFiles/cmTC_55a64.dir/build.make CMakeFiles/cmTC_55a64.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_55a64.dir/H5_SIZEOF_OFF64_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_55a64.dir/H5_SIZEOF_OFF64_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF64_T.c
+Linking C executable cmTC_55a64
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a64.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_55a64.dir/H5_SIZEOF_OFF64_T.c.o  -o cmTC_55a64 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ceb5/fast && /usr/bin/make -f CMakeFiles/cmTC_0ceb5.dir/build.make CMakeFiles/cmTC_0ceb5.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_0ceb5.dir/H5_SIZEOF_TIME_T.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_0ceb5.dir/H5_SIZEOF_TIME_T.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_TIME_T.c
+Linking C executable cmTC_0ceb5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ceb5.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_0ceb5.dir/H5_SIZEOF_TIME_T.c.o  -o cmTC_0ceb5 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of _Bool passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd0a1/fast && /usr/bin/make -f CMakeFiles/cmTC_dd0a1.dir/build.make CMakeFiles/cmTC_dd0a1.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_dd0a1.dir/H5_SIZEOF_BOOL.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_dd0a1.dir/H5_SIZEOF_BOOL.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF_BOOL.c
+Linking C executable cmTC_dd0a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd0a1.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_dd0a1.dir/H5_SIZEOF_BOOL.c.o  -o cmTC_dd0a1 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bc2af/fast && /usr/bin/make -f CMakeFiles/cmTC_bc2af.dir/build.make CMakeFiles/cmTC_bc2af.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bc2af.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gettimeofday   -o CMakeFiles/cmTC_bc2af.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bc2af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc2af.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gettimeofday    CMakeFiles/cmTC_bc2af.dir/CheckFunctionExists.c.o  -o cmTC_bc2af 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function ioctl exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b6108/fast && /usr/bin/make -f CMakeFiles/cmTC_b6108.dir/build.make CMakeFiles/cmTC_b6108.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b6108.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=ioctl   -o CMakeFiles/cmTC_b6108.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b6108
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6108.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=ioctl    CMakeFiles/cmTC_b6108.dir/CheckFunctionExists.c.o  -o cmTC_b6108 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the TIOCGWINSZ exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d843c/fast && /usr/bin/make -f CMakeFiles/cmTC_d843c.dir/build.make CMakeFiles/cmTC_d843c.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d843c.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_d843c.dir/CheckSymbolExists.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d843c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d843c.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_d843c.dir/CheckSymbolExists.c.o  -o cmTC_d843c 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+File /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/ioctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TIOCGWINSZ
+  return ((int*)(&TIOCGWINSZ))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the TIOCGETD exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f976e/fast && /usr/bin/make -f CMakeFiles/cmTC_f976e.dir/build.make CMakeFiles/cmTC_f976e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f976e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_f976e.dir/CheckSymbolExists.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f976e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f976e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_f976e.dir/CheckSymbolExists.c.o  -o cmTC_f976e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+File /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/ioctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TIOCGETD
+  return ((int*)(&TIOCGETD))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e47ce/fast && /usr/bin/make -f CMakeFiles/cmTC_e47ce.dir/build.make CMakeFiles/cmTC_e47ce.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e47ce.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=getpwuid   -o CMakeFiles/cmTC_e47ce.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e47ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e47ce.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=getpwuid    CMakeFiles/cmTC_e47ce.dir/CheckFunctionExists.c.o  -o cmTC_e47ce 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function alarm exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_798a2/fast && /usr/bin/make -f CMakeFiles/cmTC_798a2.dir/build.make CMakeFiles/cmTC_798a2.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_798a2.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=alarm   -o CMakeFiles/cmTC_798a2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_798a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_798a2.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=alarm    CMakeFiles/cmTC_798a2.dir/CheckFunctionExists.c.o  -o cmTC_798a2 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_76c42/fast && /usr/bin/make -f CMakeFiles/cmTC_76c42.dir/build.make CMakeFiles/cmTC_76c42.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_76c42.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fcntl   -o CMakeFiles/cmTC_76c42.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_76c42
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76c42.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fcntl    CMakeFiles/cmTC_76c42.dir/CheckFunctionExists.c.o  -o cmTC_76c42 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function flock exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4229/fast && /usr/bin/make -f CMakeFiles/cmTC_b4229.dir/build.make CMakeFiles/cmTC_b4229.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b4229.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=flock   -o CMakeFiles/cmTC_b4229.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b4229
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4229.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=flock    CMakeFiles/cmTC_b4229.dir/CheckFunctionExists.c.o  -o cmTC_b4229 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_33d72/fast && /usr/bin/make -f CMakeFiles/cmTC_33d72.dir/build.make CMakeFiles/cmTC_33d72.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_33d72.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fork   -o CMakeFiles/cmTC_33d72.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘fork’; expected ‘int(void)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_33d72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33d72.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=fork    CMakeFiles/cmTC_33d72.dir/CheckFunctionExists.c.o  -o cmTC_33d72 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function frexpf exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e02f2/fast && /usr/bin/make -f CMakeFiles/cmTC_e02f2.dir/build.make CMakeFiles/cmTC_e02f2.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e02f2.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=frexpf   -o CMakeFiles/cmTC_e02f2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘frexpf’; expected ‘float(float,  int *)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘frexpf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_e02f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e02f2.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=frexpf    CMakeFiles/cmTC_e02f2.dir/CheckFunctionExists.c.o  -o cmTC_e02f2 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function frexpl exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10266/fast && /usr/bin/make -f CMakeFiles/cmTC_10266.dir/build.make CMakeFiles/cmTC_10266.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_10266.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=frexpl   -o CMakeFiles/cmTC_10266.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘frexpl’; expected ‘long double(long double,  int *)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘frexpl’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_10266
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10266.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=frexpl    CMakeFiles/cmTC_10266.dir/CheckFunctionExists.c.o  -o cmTC_10266 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function gethostname exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8fa2e/fast && /usr/bin/make -f CMakeFiles/cmTC_8fa2e.dir/build.make CMakeFiles/cmTC_8fa2e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8fa2e.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTC_8fa2e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8fa2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fa2e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=gethostname    CMakeFiles/cmTC_8fa2e.dir/CheckFunctionExists.c.o  -o cmTC_8fa2e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function getrusage exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a57cf/fast && /usr/bin/make -f CMakeFiles/cmTC_a57cf.dir/build.make CMakeFiles/cmTC_a57cf.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a57cf.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=getrusage   -o CMakeFiles/cmTC_a57cf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a57cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a57cf.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=getrusage    CMakeFiles/cmTC_a57cf.dir/CheckFunctionExists.c.o  -o cmTC_a57cf 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function lstat exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2489/fast && /usr/bin/make -f CMakeFiles/cmTC_d2489.dir/build.make CMakeFiles/cmTC_d2489.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d2489.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lstat   -o CMakeFiles/cmTC_d2489.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d2489
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2489.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=lstat    CMakeFiles/cmTC_d2489.dir/CheckFunctionExists.c.o  -o cmTC_d2489 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function pread exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_658fd/fast && /usr/bin/make -f CMakeFiles/cmTC_658fd.dir/build.make CMakeFiles/cmTC_658fd.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_658fd.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=pread   -o CMakeFiles/cmTC_658fd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_658fd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_658fd.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=pread    CMakeFiles/cmTC_658fd.dir/CheckFunctionExists.c.o  -o cmTC_658fd 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function pwrite exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc573/fast && /usr/bin/make -f CMakeFiles/cmTC_dc573.dir/build.make CMakeFiles/cmTC_dc573.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_dc573.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=pwrite   -o CMakeFiles/cmTC_dc573.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dc573
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc573.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=pwrite    CMakeFiles/cmTC_dc573.dir/CheckFunctionExists.c.o  -o cmTC_dc573 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function rand_r exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f73e/fast && /usr/bin/make -f CMakeFiles/cmTC_4f73e.dir/build.make CMakeFiles/cmTC_4f73e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4f73e.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=rand_r   -o CMakeFiles/cmTC_4f73e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4f73e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f73e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=rand_r    CMakeFiles/cmTC_4f73e.dir/CheckFunctionExists.c.o  -o cmTC_4f73e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function random exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_394e4/fast && /usr/bin/make -f CMakeFiles/cmTC_394e4.dir/build.make CMakeFiles/cmTC_394e4.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_394e4.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=random   -o CMakeFiles/cmTC_394e4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_394e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_394e4.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=random    CMakeFiles/cmTC_394e4.dir/CheckFunctionExists.c.o  -o cmTC_394e4 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9f028/fast && /usr/bin/make -f CMakeFiles/cmTC_9f028.dir/build.make CMakeFiles/cmTC_9f028.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_9f028.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=signal   -o CMakeFiles/cmTC_9f028.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f028.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=signal    CMakeFiles/cmTC_9f028.dir/CheckFunctionExists.c.o  -o cmTC_9f028 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function longjmp exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0803/fast && /usr/bin/make -f CMakeFiles/cmTC_d0803.dir/build.make CMakeFiles/cmTC_d0803.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d0803.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=longjmp   -o CMakeFiles/cmTC_d0803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d0803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0803.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=longjmp    CMakeFiles/cmTC_d0803.dir/CheckFunctionExists.c.o  -o cmTC_d0803 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function setjmp exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2e075/fast && /usr/bin/make -f CMakeFiles/cmTC_2e075.dir/build.make CMakeFiles/cmTC_2e075.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2e075.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=setjmp   -o CMakeFiles/cmTC_2e075.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2e075
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e075.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=setjmp    CMakeFiles/cmTC_2e075.dir/CheckFunctionExists.c.o  -o cmTC_2e075 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function siglongjmp exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8136/fast && /usr/bin/make -f CMakeFiles/cmTC_c8136.dir/build.make CMakeFiles/cmTC_c8136.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c8136.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=siglongjmp   -o CMakeFiles/cmTC_c8136.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8136
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8136.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=siglongjmp    CMakeFiles/cmTC_c8136.dir/CheckFunctionExists.c.o  -o cmTC_c8136 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function sigprocmask exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6679f/fast && /usr/bin/make -f CMakeFiles/cmTC_6679f.dir/build.make CMakeFiles/cmTC_6679f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_6679f.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=sigprocmask   -o CMakeFiles/cmTC_6679f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6679f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6679f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=sigprocmask    CMakeFiles/cmTC_6679f.dir/CheckFunctionExists.c.o  -o cmTC_6679f 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function snprintf exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_26037/fast && /usr/bin/make -f CMakeFiles/cmTC_26037.dir/build.make CMakeFiles/cmTC_26037.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_26037.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=snprintf   -o CMakeFiles/cmTC_26037.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘snprintf’; expected ‘int(char *, long unsigned int,  const char *, ...)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘snprintf’ is declared in header ‘<stdio.h>’
+  +++ |+#include <stdio.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_26037
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26037.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=snprintf    CMakeFiles/cmTC_26037.dir/CheckFunctionExists.c.o  -o cmTC_26037 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function srandom exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_20bfb/fast && /usr/bin/make -f CMakeFiles/cmTC_20bfb.dir/build.make CMakeFiles/cmTC_20bfb.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_20bfb.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=srandom   -o CMakeFiles/cmTC_20bfb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20bfb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20bfb.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=srandom    CMakeFiles/cmTC_20bfb.dir/CheckFunctionExists.c.o  -o cmTC_20bfb 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function strdup exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2a96/fast && /usr/bin/make -f CMakeFiles/cmTC_b2a96.dir/build.make CMakeFiles/cmTC_b2a96.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b2a96.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strdup   -o CMakeFiles/cmTC_b2a96.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strdup’; expected ‘char *(const char *)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_b2a96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2a96.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strdup    CMakeFiles/cmTC_b2a96.dir/CheckFunctionExists.c.o  -o cmTC_b2a96 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function strtoll exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_607ea/fast && /usr/bin/make -f CMakeFiles/cmTC_607ea.dir/build.make CMakeFiles/cmTC_607ea.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_607ea.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strtoll   -o CMakeFiles/cmTC_607ea.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_607ea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_607ea.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strtoll    CMakeFiles/cmTC_607ea.dir/CheckFunctionExists.c.o  -o cmTC_607ea 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dee31/fast && /usr/bin/make -f CMakeFiles/cmTC_dee31.dir/build.make CMakeFiles/cmTC_dee31.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_dee31.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strtoull   -o CMakeFiles/cmTC_dee31.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dee31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dee31.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=strtoull    CMakeFiles/cmTC_dee31.dir/CheckFunctionExists.c.o  -o cmTC_dee31 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function symlink exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a10e2/fast && /usr/bin/make -f CMakeFiles/cmTC_a10e2.dir/build.make CMakeFiles/cmTC_a10e2.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_a10e2.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=symlink   -o CMakeFiles/cmTC_a10e2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a10e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a10e2.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=symlink    CMakeFiles/cmTC_a10e2.dir/CheckFunctionExists.c.o  -o cmTC_a10e2 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function system exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fcb4b/fast && /usr/bin/make -f CMakeFiles/cmTC_fcb4b.dir/build.make CMakeFiles/cmTC_fcb4b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_fcb4b.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=system   -o CMakeFiles/cmTC_fcb4b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fcb4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcb4b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=system    CMakeFiles/cmTC_fcb4b.dir/CheckFunctionExists.c.o  -o cmTC_fcb4b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function tmpfile exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_966d7/fast && /usr/bin/make -f CMakeFiles/cmTC_966d7.dir/build.make CMakeFiles/cmTC_966d7.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_966d7.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=tmpfile   -o CMakeFiles/cmTC_966d7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_966d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_966d7.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=tmpfile    CMakeFiles/cmTC_966d7.dir/CheckFunctionExists.c.o  -o cmTC_966d7 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function asprintf exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3b378/fast && /usr/bin/make -f CMakeFiles/cmTC_3b378.dir/build.make CMakeFiles/cmTC_3b378.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_3b378.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=asprintf   -o CMakeFiles/cmTC_3b378.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3b378
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b378.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=asprintf    CMakeFiles/cmTC_3b378.dir/CheckFunctionExists.c.o  -o cmTC_3b378 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function vasprintf exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f261f/fast && /usr/bin/make -f CMakeFiles/cmTC_f261f.dir/build.make CMakeFiles/cmTC_f261f.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f261f.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=vasprintf   -o CMakeFiles/cmTC_f261f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f261f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f261f.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=vasprintf    CMakeFiles/cmTC_f261f.dir/CheckFunctionExists.c.o  -o cmTC_f261f 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function waitpid exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2641b/fast && /usr/bin/make -f CMakeFiles/cmTC_2641b.dir/build.make CMakeFiles/cmTC_2641b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2641b.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=waitpid   -o CMakeFiles/cmTC_2641b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2641b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2641b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=waitpid    CMakeFiles/cmTC_2641b.dir/CheckFunctionExists.c.o  -o cmTC_2641b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function vsnprintf exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4ef40/fast && /usr/bin/make -f CMakeFiles/cmTC_4ef40.dir/build.make CMakeFiles/cmTC_4ef40.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4ef40.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=vsnprintf   -o CMakeFiles/cmTC_4ef40.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘vsnprintf’; expected ‘int(char *, long unsigned int,  const char *, __va_list_tag *)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘vsnprintf’ is declared in header ‘<stdio.h>’
+  +++ |+#include <stdio.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_4ef40
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ef40.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=vsnprintf    CMakeFiles/cmTC_4ef40.dir/CheckFunctionExists.c.o  -o cmTC_4ef40 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the sigsetjmp exist passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9bc9a/fast && /usr/bin/make -f CMakeFiles/cmTC_9bc9a.dir/build.make CMakeFiles/cmTC_9bc9a.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_9bc9a.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_9bc9a.dir/CheckSymbolExists.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9bc9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bc9a.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_9bc9a.dir/CheckSymbolExists.c.o  -o cmTC_9bc9a 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+File /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <setjmp.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sigsetjmp
+  return ((int*)(&sigsetjmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function difftime exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d9d2b/fast && /usr/bin/make -f CMakeFiles/cmTC_d9d2b.dir/build.make CMakeFiles/cmTC_d9d2b.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d9d2b.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=difftime   -o CMakeFiles/cmTC_d9d2b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d9d2b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9d2b.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=difftime    CMakeFiles/cmTC_d9d2b.dir/CheckFunctionExists.c.o  -o cmTC_d9d2b 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b59ef/fast && /usr/bin/make -f CMakeFiles/cmTC_b59ef.dir/build.make CMakeFiles/cmTC_b59ef.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b59ef.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_b59ef.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b59ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b59ef.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTC_b59ef.dir/CheckFunctionExists.c.o  -o cmTC_b59ef 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4787/fast && /usr/bin/make -f CMakeFiles/cmTC_b4787.dir/build.make CMakeFiles/cmTC_b4787.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b4787.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_b4787.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b4787
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4787.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTC_b4787.dir/CheckFunctionExists.c.o  -o cmTC_b4787  -lrt 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
+Determining size of __float128 passed with the following output:
+Change Dir: /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2893e/fast && /usr/bin/make -f CMakeFiles/cmTC_2893e.dir/build.make CMakeFiles/cmTC_2893e.dir/build
+make[1]: ingresso nella directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_2893e.dir/H5_SIZEOF___FLOAT128.c.o
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -msse2 -msse4.2 -mpopcnt    -o CMakeFiles/cmTC_2893e.dir/H5_SIZEOF___FLOAT128.c.o   -c /home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CheckTypeSize/H5_SIZEOF___FLOAT128.c
+Linking C executable cmTC_2893e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2893e.dir/link.txt --verbose=1
+/usr/bin/cc  -msse2 -msse4.2 -mpopcnt     CMakeFiles/cmTC_2893e.dir/H5_SIZEOF___FLOAT128.c.o  -o cmTC_2893e 
+make[1]: uscita dalla directory «/home/cursed/gitgud/gatb-core/gatb-core/examples/CMakeFiles/CMakeTmp»
+
+
+
