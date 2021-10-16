@@ -28,11 +28,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <iostream>
 #include <vector>
-
-// #include "dd_utils.hpp"
+#include <meddly.h>
+#include <meddly_expert.h>
 
 
 using int_vector = std::vector<int>;
+using buffer_slot = int_vector*;
 
 /** Buffer for the data of a single graph. */
 class Buffer : private std::vector<int_vector> { 
@@ -63,20 +64,25 @@ public:
     inline Buffer(size_t buffersize, size_t elem_size, bool set_values);
 
     inline void flush();
+    void flush(MEDDLY::dd_edge& edge, std::vector<long>* terminals = nullptr)  {
+        if (num_elements() == 0)    
+            return; 
 
-    // void flush(MEDDLY::dd_edge& edge)  {
-    //     if (num_elements() == 0)    
-    //         return; 
+        MEDDLY::forest *forest = edge.getForest(); 
+        MEDDLY::dd_edge tmp(forest); 
 
-    //     MEDDLY::forest *forest = edge.getForest(); 
-    //     MEDDLY::dd_edge tmp(forest); 
-
-        // long *tvalues = terminals ? terminals->data() : values_data(); 
-        // std::vector<float> floatvalues(tvalues, tvalues + num_elements());  //inefficiente a scoppio
-
+        long *tvalues = terminals ? terminals->data() : values_data(); 
+        std::vector<float> floatvalues(tvalues, tvalues + num_elements());  //inefficiente a scoppio
 
 
-/*
+
+        // for (int i = 0; i < num_elements(); ++i)
+        //     floatvalues.push_back(tvalues[i]);
+
+
+
+        // std::cout << "try to build new edge...." << std::endl; 
+
         try {
             // forest->createEdge(data(), tvalues, num_elements(), tmp);
             forest->createEdge(data(), floatvalues.data(), num_elements(), tmp);
@@ -94,7 +100,7 @@ public:
             std::cout << "esploso alla prima occasione...." << std::endl; 
             std::cout << e.getName() << std::endl; 
             throw MEDDLY::error(e); 
-        } */
+        }
 
 
 /*
@@ -116,12 +122,11 @@ public:
             std::cout << "Meddly error while flushing data in dd edge: " << e.getName() << std::endl; 
             throw MEDDLY::error(e); 
         }  */ 
-    // }
+    }
 
-    /** Return a pair containing a pointer to the next element available of the buffer.
-     * and a flag setted to true if there are other elements avaiable, false otherwise. */
-    inline bool get_slot(int_vector*& slot);
-
+    /** Save in slot the first element available of the buffer.
+     * returns true if there are other elements avaiable */
+    inline bool get_slot(buffer_slot& slot);
     inline int_vector& push_slot(int value);
 
     inline Buffer::base::iterator begin() { return base::begin(); }
@@ -137,7 +142,7 @@ public:
         return enable_values ? values.data() : nullptr; 
     }
 
-    inline unsigned num_elements() {
+    inline unsigned num_elements() const {
         return num_current_elements;
     }
 
@@ -179,7 +184,7 @@ inline void Buffer::flush() {
 }
 
 
-inline bool Buffer::get_slot(int_vector*& slot) {
+inline bool Buffer::get_slot(buffer_slot& slot) {
     slot = std::addressof(*current);
     ++num_current_elements; 
 
