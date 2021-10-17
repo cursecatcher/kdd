@@ -6,7 +6,7 @@
 #include "cxxopts.hpp"
 #include "buffer.hpp"
 
-#define BUFFERLENGTH 10000
+#define BUFFERLENGTH 100000
 #define BP_A 0 
 #define BP_C 1 
 #define BP_G 2 
@@ -27,7 +27,6 @@ struct stats_dd {
         num_nodes(e.getNodeCount()), 
         num_edges(e.getEdgeCount()), 
         num_ne(num_nodes + num_edges) {
-
     }
 };
 
@@ -202,6 +201,7 @@ int main(int argc, char **argv) {
             }
         }
         cout << "Flushing the buffer for the last time..." << endl; 
+
         extr.force_flush(kmer_mdd); 
     } catch (MEDDLY::error& e) { 
         std::cout << "Meddly error: " << e.getName() << std::endl;

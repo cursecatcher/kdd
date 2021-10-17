@@ -31,11 +31,16 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <meddly.h>
 #include <meddly_expert.h>
 
+template<class T> class BufferMultiTerminal; 
+class Buffer; 
+
 
 using int_vector = std::vector<int>;
 using buffer_slot = int_vector*;
 
-/** Buffer for the data of a single graph. */
+
+
+// template<class T>
 class Buffer : private std::vector<int_vector> { 
     using base = std::vector<int_vector>; 
     using value_vector = std::vector<long>; //template? 
@@ -55,20 +60,10 @@ class Buffer : private std::vector<int_vector> {
     std::vector<int*> pbuffer; 
 
 
-    inline void buildNewEdge(MEDDLY::dd_edge& edge) {
+    virtual void buildNewEdge(MEDDLY::dd_edge& edge) {
+        //creating a bdd -  providing only variable assignments
         MEDDLY::forest *forest = edge.getForest(); 
-
-        switch (forest->getRangeType()) {
-            case MEDDLY::forest::BOOLEAN:   
-                forest->createEdge(data(), num_elements(), edge); 
-                break; 
-            case MEDDLY::forest::INTEGER:  
-            case MEDDLY::forest::REAL:
-                forest->createEdge(data(), values_data(), num_elements(), edge);
-                break; 
-            default:
-                throw std::logic_error("Unexpected MEDDLY::forest::RangeType.\n");
-        } 
+        forest->createEdge( data(), num_elements(), edge );
     }
 
 
@@ -77,11 +72,38 @@ public:
     const size_t element_size; 
 
     //constructor for empty buffer
-    inline Buffer(size_t elem_size, bool set_values); 
-    //constructor for buffer of buffersize elements 
-    inline Buffer(size_t buffersize, size_t elem_size, bool set_values);
+    inline Buffer(size_t elem_size, bool set_values)     
+    :   enable_values(set_values),  
+        num_current_elements(0), 
+        element_size(elem_size) {
+    }
 
-    inline void flush();
+    //constructor for buffer of buffersize elements 
+    inline Buffer(size_t buffersize, size_t elem_size, bool set_values)     
+        : Buffer(elem_size, set_values) {
+
+        resize(buffersize); 
+
+        if (enable_values) {
+            values.resize(buffersize); 
+            current_value = values.begin();
+        } 
+
+        for (auto it = begin(); it != end(); ++it) {
+            it->resize(element_size); 
+            pbuffer.push_back(it->data());
+        }
+
+        current = begin();  
+    }
+
+    inline void flush()  {
+        current = begin(); 
+        num_current_elements = 0; 
+
+        if (enable_values)
+            current_value = values.begin(); 
+    }
 
     //flush buffer content to MDD
     void flush(MEDDLY::dd_edge& edge) {
@@ -101,108 +123,124 @@ public:
         }
     }
 
-    /** Save in slot the first element available of the buffer.
-     * returns true if there are other elements avaiable */
-    inline bool get_slot(buffer_slot& slot);
-    inline int_vector& push_slot(int value);
+    /** Save the first available buffer's slot;
+     * returns true if there are other slots avaiable */
+    inline bool get_slot(buffer_slot& slot) {
+        slot = std::addressof(*current);
+        ++num_current_elements; 
+
+        if (++current == end()) {
+            current = begin(); 
+            return false; 
+        }
+
+        return true; 
+    }
+
+    inline int_vector& push_slot()  {
+        //append a new int_vector of length=element_size to the buffer
+        emplace_back(element_size);
+        int_vector& last_vector = back(); 
+        pbuffer.push_back(last_vector.data()); 
+        // values.push_back(value); 
+        ++num_current_elements; 
+        return last_vector; 
+    }
 
     inline Buffer::base::iterator begin() { return base::begin(); }
     inline Buffer::base::iterator end() { return base::end(); }
 
-    inline void save_value(const long v);
+    // inline void save_value(const long v)  {
+    //     if (enable_values) {
+    //         *current_value = v; 
+
+    //         if (++current_value == values.end())
+    //             current_value = values.begin(); 
+    //     }
+    // }
 
     inline int** data() { return pbuffer.data(); }
 
     inline size_t size() { return base::size(); }
 
-    inline long* values_data() {
-        return enable_values ? values.data() : nullptr; 
-    }
+    // inline long* values_data() {
+    //     return enable_values ? values.data() : nullptr; 
+    // }
 
     inline unsigned num_elements() const {
         return num_current_elements;
     }
 
-    inline void show_content() const; 
+    inline void show_content(std::ostream& os) const {
+        for (int i = 0; i < num_current_elements; ++i) {
+            for (int val: at(i))
+                os << val << " ";
+            // if (enable_values)
+            //     os << "  ==> " << values.at(i); 
+            os << "\n"; 
+        }
+        os << std::endl; 
+    } 
 }; 
 
 
-Buffer::Buffer(size_t elem_size, bool set_values)
-    :   enable_values(set_values),  
-        num_current_elements(0), 
-        element_size(elem_size) {
-}
+template<class T>
+class BufferMultiTerminal : public Buffer {
+    using value_vector = std::vector<T>; 
 
-Buffer::Buffer(size_t buffersize, size_t elem_size, bool set_values) 
-    : Buffer(elem_size, set_values) {
+    value_vector terminals; 
+    typename value_vector::iterator it_terminals;
 
-    resize(buffersize); 
 
-    if (enable_values) {
-        values.resize(buffersize); 
-        current_value = values.begin();
-    } 
-
-    for (auto it = begin(); it != end(); ++it) {
-        it->resize(element_size); 
-        pbuffer.push_back(it->data());
+    virtual void buildNewEdge(MEDDLY::dd_edge& edge) {
+        //creating a multiterminal dd - providing var assignments & terminal values 
+        MEDDLY::forest *forest = edge.getForest(); 
+        forest->createEdge( Buffer::data(), data(), num_elements(), edge );
     }
 
-    current = begin();  
-}
-
-
-inline void Buffer::flush() {
-    current = begin(); 
-    num_current_elements = 0; 
-
-    if (enable_values)
-        current_value = values.begin(); 
-}
-
-
-inline bool Buffer::get_slot(buffer_slot& slot) {
-    slot = std::addressof(*current);
-    ++num_current_elements; 
-
-    if (++current == end()) {
-        current = begin(); 
-        return false; 
+public:
+    BufferMultiTerminal(size_t buffersize, size_t elem_size) : Buffer(buffersize, elem_size, false) {
+        terminals.resize(buffersize);
+        it_terminals = terminals.begin(); 
     }
 
-    return true; 
-}
+    void save_value(const T& v) {
+        *it_terminals = v; 
 
-
-inline int_vector& Buffer::push_slot(int value) {
-    //append a new int_vector of length=element_size to the buffer
-    emplace_back(element_size);
-    int_vector& last_vector = back(); 
-    pbuffer.push_back(last_vector.data()); 
-    values.push_back(value); 
-    ++num_current_elements; 
-    return last_vector; 
-}
-
-inline void Buffer::save_value(const long v) {
-    if (enable_values) {
-        *current_value = v; 
-
-        if (++current_value == values.end())
-            current_value = values.begin(); 
+        if (++it_terminals == terminals.end()) {
+            it_terminals = terminals.begin();
+        }
     }
-}
 
-inline void Buffer::show_content() const {
-    for (int i = 0; i < num_current_elements; ++i) {
-        // const int_vector& v = at(i); 
-
-        for (int val: at(i))
-            std::cout << val << " ";
-        if (enable_values)
-            std::cout << "  ==> " << values.at(i); 
-        std::cout << "\n"; 
+    const T* get_terminals() const {
+        return terminals.data(); 
     }
-    std::cout << std::endl; 
-}
+
+    inline void flush() {
+        Buffer::flush();
+        it_terminals = terminals.begin();
+    }
+
+    //flush buffer content to MDD
+    void flush(MEDDLY::dd_edge& edge) {
+        Buffer::flush(edge);
+        it_terminals = terminals.begin();
+    }
+
+
+    inline int_vector& push_slot(int tvalue)  {
+        terminals.push_back(tvalue);
+        return Buffer::push_slot();
+
+        // terminals.push_back()
+        // //append a new int_vector of length=element_size to the buffer
+        // emplace_back(element_size);
+        // int_vector& last_vector = back(); 
+        // pbuffer.push_back(last_vector.data()); 
+        // // values.push_back(value); 
+        // ++num_current_elements; 
+        // return last_vector; 
+    }
+};
+
 #endif
