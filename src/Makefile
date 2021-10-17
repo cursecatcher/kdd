@@ -3,11 +3,11 @@
 GATB		=$(PWD)/gatb-core
 
 GATB_LIB	=$(GATB)/build/lib
+GATB_LIB=$(GATB)/build/lib
 
-DEBUG		= -g -ggdb 
-CXXFLAGS	= -I$(GATB)/src  -I$(GATB)/build/include -I$(GATB)/thirdparty -I./meddly/include
-LDFLAGS		= -L$(GATB_LIB) -lgatbcore  -lpthread -lhdf5 -lz -ldl meddly/lib/libmeddly.a # -lmeddly #-static -std=c++0x
-SETTINGS 	= -std=c++0x  $(DEBUG)  #-O3 
+CXXFLAGS =  -std=c++0x -O3 -I./meddly/include  #-I$(GATB)/src  -I$(GATB)/build/include -I$(GATB)/thirdparty 
+LDFLAGS=  meddly/lib/libmeddly.a   -lpthread -lz -std=c++0x -ldl #-L$(GATB_LIB) -lgatbcore -lhdf5   #-static
+
 
 SRCS = $(wildcard *.cpp)
 OBJS = $(patsubst %.cpp,%,$(SRCS))
@@ -15,14 +15,7 @@ OBJS = $(patsubst %.cpp,%,$(SRCS))
 all: $(OBJS)
 
 clean:
-	rm -fv $(OBJS) *.o 
-
-# %: %.o 
-# 	$(CXX) -o $@ $^ $(LDFLAGS) $(SETTINGS)
-
-# %.o: %.cpp 
-# 	$(CXX) -c $^ $(CXXFLAGS) $(SETTINGS)
+	rm -fv $(OBJS)
 
 %: %.cpp
-	$(CXX) $(CXXFLAGS) $^ -o $@  $(LDFLAGS) $(SETTINGS)
-
+	$(CXX) $(CXXFLAGS) $^ -o $@  $(LDFLAGS)

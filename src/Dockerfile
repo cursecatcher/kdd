@@ -18,19 +18,22 @@ RUN ./autogen.sh && \
     make install && \ 
     make clean 
 
-RUN apt install -y cmake
 
-COPY gatb-core /opt/gatb-core 
-WORKDIR /opt/gatb-core
-RUN rm -rf build && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make  
+# RUN apt install -y cmake
+
+# # COPY gatb-core /opt/gatb-core 
+# # WORKDIR /opt/gatb-core
+# # RUN rm -rf build && \
+# #     mkdir build && \
+# #     cd build && \
+# #     cmake .. && \
+# #     make  
 
 COPY *.cpp *.hpp Makefile /opt/
-WORKDIR /opt 
-RUN make kmerdd && mv kmerdd /usr/local/bin/
+WORKDIR /opt
+RUN make ust_dd && mv ust_dd /usr/local/bin/ 
+# RUN make kdd && mv kdd /usr/local/bin/
+# RUN make kmers && mv kmers /usr/local/bin/
 
 
 

@@ -54,6 +54,24 @@ class Buffer : private std::vector<int_vector> {
 
     std::vector<int*> pbuffer; 
 
+
+    inline void buildNewEdge(MEDDLY::dd_edge& edge) {
+        MEDDLY::forest *forest = edge.getForest(); 
+
+        switch (forest->getRangeType()) {
+            case MEDDLY::forest::BOOLEAN:   
+                forest->createEdge(data(), num_elements(), edge); 
+                break; 
+            case MEDDLY::forest::INTEGER:  
+            case MEDDLY::forest::REAL:
+                forest->createEdge(data(), values_data(), num_elements(), edge);
+                break; 
+            default:
+                throw std::logic_error("Unexpected MEDDLY::forest::RangeType.\n");
+        } 
+    }
+
+
 public: 
     //size of an internal buffer 
     const size_t element_size; 
@@ -64,64 +82,23 @@ public:
     inline Buffer(size_t buffersize, size_t elem_size, bool set_values);
 
     inline void flush();
-    void flush(MEDDLY::dd_edge& edge, std::vector<long>* terminals = nullptr)  {
-        if (num_elements() == 0)    
-            return; 
 
-        MEDDLY::forest *forest = edge.getForest(); 
-        MEDDLY::dd_edge tmp(forest); 
+    //flush buffer content to MDD
+    void flush(MEDDLY::dd_edge& edge) {
+        if (num_elements()) {
+            MEDDLY::forest *forest = edge.getForest();
+            MEDDLY::dd_edge tmp(forest);
 
-        long *tvalues = terminals ? terminals->data() : values_data(); 
-        std::vector<float> floatvalues(tvalues, tvalues + num_elements());  //inefficiente a scoppio
-
-
-
-        // for (int i = 0; i < num_elements(); ++i)
-        //     floatvalues.push_back(tvalues[i]);
-
-
-
-        // std::cout << "try to build new edge...." << std::endl; 
-
-        try {
-            // forest->createEdge(data(), tvalues, num_elements(), tmp);
-            forest->createEdge(data(), floatvalues.data(), num_elements(), tmp);
-            // std::cout << "new edge:" << std::endl; 
-            // mtmdd::visit_edge(tmp); 
-
-            // std::cout << "current dd:" << std::endl; 
-            // mtmdd::visit_edge(edge);    
-
-            // std::cout << "applying apply application" << std::endl; 
-            MEDDLY::apply(MEDDLY::PLUS, edge, tmp, edge); 
-            tmp.clear(); 
-            flush(); 
-        } catch (MEDDLY::error& e) {
-            std::cout << "esploso alla prima occasione...." << std::endl; 
-            std::cout << e.getName() << std::endl; 
-            throw MEDDLY::error(e); 
+            try {
+                buildNewEdge(tmp);  //build temporary edge depending on the DD type 
+                edge += tmp;        //merge the temporary edge to the main DD  (performing PLUS or UNION operation)
+                tmp.clear();        //clear temporary edge 
+                flush();            //clear buffer 
+            } catch (MEDDLY::error& e) {
+                std::cout << "Meddly error during UNION: " << e.getName() << std::endl; 
+                throw MEDDLY::error(e); 
+            }
         }
-
-
-/*
-        try {
-            MEDDLY::forest *forest = edge.getForest(); 
-            MEDDLY::dd_edge tmp(forest); 
-
-    
-
-            long* t = terminals ? terminals->data() : values_data(); 
-            forest->createEdge(data(), t, num_elements(), tmp);
-
-            mtmdd::visit_edge(tmp); 
-
-            MEDDLY::apply(MEDDLY::PLUS, edge, tmp, edge);
-            tmp.clear();
-            flush();
-        } catch (MEDDLY::error& e) {
-            std::cout << "Meddly error while flushing data in dd edge: " << e.getName() << std::endl; 
-            throw MEDDLY::error(e); 
-        }  */ 
     }
 
     /** Save in slot the first element available of the buffer.
